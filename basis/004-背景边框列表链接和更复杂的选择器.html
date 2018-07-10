@@ -9,8 +9,11 @@
               }
               .warp{
                width:500px;
+               padding: 20px;
                margin:auto;
                text-align:left;
+               background:#ddd;
+               border:1px solid #000;
               }
               h1{
                 font-size:35px;
@@ -21,14 +24,15 @@
                 text-decoration:underline;
               }
               ul li{
-                list-style:none;
+                list-style:square inside url('images/ife004.gif');
                 font-style:italic;
                 line-height:29px;
               }
-              footer span{
-                font-weight:800;
-                text-indent:22px;
-              }
+              footer a:link {color:#541b8b;}		/* 未被访问的链接 */
+              footer a:visited {color:#541b8b;}	/* 已被访问的链接 */
+              footer a:hover {color:#FF00FF;}	/* 鼠标指针移动到链接上 */
+              footer a:active {color:#0000FF;}	/* 正在被点击的链接 */
+
 
              </style>
   </head>
@@ -66,8 +70,10 @@
             <footer>
               <!--联系我-->
               <address>
-                <span>我的GitHub:</span>
-                <a href="https://github.com/AnsonZnl">https://github.com/AnsonZnl</a>
+                <a href="https://github.com/AnsonZnl" target="_blank">我的GitHub</a>
+              </address>
+              <address>
+                <a href="https://www.zhangningle.top" target="_blank">我的Hexo博客</a>
               </address>
             </footer>
             <div>
