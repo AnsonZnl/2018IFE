@@ -1,0 +1,42 @@
+.warp{
+  width: 750px;
+  border-right:2px solid #efefef;
+}
+.header {
+  padding:1px 10px 1px 25px;
+  color: #fff;
+  background: #858585;
+}
+.item{
+  overflow: hidden;
+  border-bottom:2px solid #efefef;
+}
+.tiem-list{
+  float: left;
+   margin: 0;
+   padding-left: 5px;
+   padding-top: 5px;
+  }
+.item-title{
+  float: left;
+  margin: 0;
+  width: 16%;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 16px;
+  background: #d6d6d6;
+}
+.item-list-1 dd,
+.item-list-1 dt{
+  display: inline-block;
+}
+.item-list-1 dd{
+  margin-right: 25px;
+  margin-left: 7px;
+}
+.item-list-2 dd,
+.item-list-2 dt{
+  margin: 0;
+  display: inline;
+}

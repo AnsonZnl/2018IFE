@@ -1,0 +1,12 @@
+
+.item-list-1 dd,
+.item-list-1 dt{
+  display: inline-block;
+}
+.item-list-1 dd{
+  margin-right: 25px;
+  margin-left: 7px;
+}
+.item-list-2 dd+dt{
+  margin-top: 15px;
+}

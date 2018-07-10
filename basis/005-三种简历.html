@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>resume</title>
+    <link rel="stylesheet" href="css/005_style1.css">
+    <style>
+     body {
+         font-family: 'Microsoft YaHei';
+     }
+     .warp{
+       margin-top: 10px;
+     }
+     .btn-bgc{
+       background: #66a5fb;
+       color: #fff;
+     }
+     .btn-bgc:focus{
+       outline:0;
+     }
+     dt{
+       font-weight: bold;
+     }
+     dd{
+       margin: 0;
+     }
+
+ </style>
+  </head>
+  <body>
+    <nav>
+      <span>切换样式--></span>
+      <button class="btn btn-bgc" data-style="005_style1" type="button">style_1</button>
+      <button class="btn" data-style="005_style2" type="button">style_2</button>
+      <button class="btn" data-style="005_style3" type="button">style_3</button>
+    </nav>
+    <main class="warp">
+      <header class="header">
+        <h1>简历</h1>
+      </header>
+      <section class="main">
+         <section class="item">
+             <h2 class="item-title">基本信息</h2>
+             <dl class="tiem-list item-list-1">
+                 <dt>姓名</dt><dd>张三</dd>
+                 <dt>性别</dt><dd>男</dd>
+                 <dt>应聘岗位</dt><dd>Web前端工程师</dd>
+             </dl>
+         </section>
+         <section class="item">
+             <h2 class="item-title">联系方式</h2>
+             <dl class="tiem-list item-list-1">
+                 <dt>手机</dt><dd>12312341234</dd>
+                 <dt>Email</dt><dd><a href="">joinefe@baidu.com</a></dd>
+                 <dt>个人主页</dt><dd><a href="">Github</a></dd>
+             </dl>
+         </section>
+         <section class="item">
+             <h2 class="item-title">能力描述</h2>
+             <dl class="tiem-list item-list-2">
+                 <dt>技能能力</dt><dd>熟练掌握HTML,CSS,JavaScript</dd>
+                 <br>
+                 <dt>综合能力</dt><dd>良好的沟通能力，主动积极，努力勤奋</dd>
+             </dl>
+         </section>
+         <section class="item">
+             <h2 class="item-title">教育经历</h2>
+             <dl class="tiem-list item-list-2">
+                 <dt>本科</dt><dd>百度前端技术学院小微学院</dd>
+                 <br>
+                 <dt>研究生</dt><dd>百度前端技术学院大斌学院</dd>
+             </dl>
+         </section>
+         <section class="item">
+             <h2 class="item-title">项目经历</h2>
+             <dl class="tiem-list item-list-2">
+                 <dt>小度小度</dt><dd>作为前端工程师角色参与了ABC组件的开发</dd>
+                 <br>
+                 <dt>SAN Dom</dt><dd>作为文档工程师参与了SAN Dom编写</dd>
+             </dl>
+         </section>
+      </section>
+    </mian>
+    <script>
+      var linkCss = document.getElementsByTagName('link');
+      var btn = document.querySelectorAll(".btn");
+      for(var i = 0;i < btn.length;i++){
+        btn[i].onclick=function () {
+          for(j=0;j<btn.length;j++){
+            btn[j].className="";
+          }
+          //var styleCss = this.getAttribute("data-style");  这种方法也可以获取data值
+          //参考链接 https://blog.csdn.net/yh0205039/article/details/51003317
+          this.className="btn-bgc";
+          var styleCss = this.dataset.style;
+          linkCss[0].href = 'css/'+styleCss+'.css';
+        }
+      }
+    </script>
+  </body>
+</html>

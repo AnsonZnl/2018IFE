@@ -14,9 +14,11 @@
 * #### 第三天：让简历有点色彩
     <a href="http://ife.baidu.com/course/detail/id/37" target="_blank">课程</a> <a href="https://zhangningle.gitee.io/ife/basis/003-让简历有点颜色.html" target="_blank">作业</a>
 
-* #### 练习四：第四天，背景边框列表链接和更复杂的选择器
-    <a href="http://ife.baidu.com/course/detail/id/38" target="_blank">课程</a> <a href="https://zhangningle.gitee.io/ife/basis/003-让简历有点颜色.html" target="_blank">作业</a>
+* #### 第四天: 背景边框列表链接和更复杂的选择器
+    <a href="http://ife.baidu.com/course/detail/id/38" target="_blank">课程</a> <a href="https://zhangningle.gitee.io/ife/basis/004-背景边框列表链接和更复杂的选择器.html" target="_blank">作业</a>
 
+* #### 第五天和第六天：三种简历
+    <a href="http://ife.baidu.com/course/detail/id/40" target="_blank">课程</a> <a href="https://zhangningle.gitee.io/ife/basis/005-三种简历.html" target="_blank">作业</a>
 --------------------------
 
 ### MVVM学院
