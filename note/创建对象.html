@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>创建对象</title>
+  </head>
+  <body>
+    <h1>创建对象</h1>
+  </body>
+  <script>
+      function Student(name){
+          this.name = name;
+          Student.prototype.hello = function(){
+            alert('hello,' + this.name + '!');
+          }
+      }
+      var xiaoming = new Student("小明");
+      var xiaohong = new Student("小红");
+      console.log(xiaohong.hello);
+      console.log(xiaoming.hello);
+      console.log(xiaoming.hello === xiaohong.hello);
+      console.log(xiaoming.constructor === Student)//true
+      console.log(xiaohong instanceof Object);//true
+      console.log(xiaohong instanceof Student);//true
+      console.log(xiaoming instanceof Object);//true
+      console.log(xiaoming instanceof Student);//true
+  </script>
+</html>
