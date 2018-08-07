@@ -10,9 +10,13 @@
   <script>
       function Student(name){
           this.name = name;
-          Student.prototype.hello = function(){
-            alert('hello,' + this.name + '!');
-          }
+          // this.hello = function(){
+          //   alert('hello,' + this.name + '!');
+          // }
+      }
+      Student.prototype.age = 19;
+      Student.prototype.hello = function(){
+        alert('hello,' + this.name + '!');
       }
       var xiaoming = new Student("小明");
       var xiaohong = new Student("小红");
@@ -24,5 +28,8 @@
       console.log(xiaohong instanceof Student);//true
       console.log(xiaoming instanceof Object);//true
       console.log(xiaoming instanceof Student);//true
+      console.log(xiaoming.age);//19
+      console.log(xiaohong.age);//19
+      console.log(Student.prototype.constructor === Student)//true
   </script>
 </html>
